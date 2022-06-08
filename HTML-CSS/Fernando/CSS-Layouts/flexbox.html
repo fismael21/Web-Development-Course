@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox</title>
+    <style>
+      .el--1 {
+        background-color: blueviolet;
+        padding: 0px 10px;
+      }
+      .el--2 {
+        background-color: orangered;
+        padding: 0px 10px;
+      }
+      .el--3 {
+        background-color: green;
+        height: 150px;
+        padding: 0px 10px;
+      }
+      .el--4 {
+        background-color: goldenrod;
+        padding: 0px 10px;
+      }
+      .el--5 {
+        background-color: palevioletred;
+        padding: 0px 10px;
+      }
+      .el--6 {
+        background-color: steelblue;
+        padding: 0px 10px;
+      }
+      .el--7 {
+        background-color: rgb(200, 200, 0);
+        padding: 0px 10px;
+      }
+      .el--8 {
+        background-color: crimson;
+        padding: 0px 10px;
+      }
+
+      .container {
+        /* STARTER */
+        font-family: sans-serif;
+        /*padding: 10px 10px;*/
+        background-color: rgb(41, 41, 41);
+        font-size: 40px;
+        margin: 40px;
+        color: white;
+
+        /* FLEXBOX */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /*gap: 20px;*/
+        /*justify-content: space-between;*/
+      }
+
+      .el {
+        /*
+        flex-grow: 0;
+        flex-shrink: 1;
+        flex-basis: auto
+        flex-grow: 0 1 auto;*/
+
+        flex: 1;
+      }
+
+      .el--1 {
+        order: 1;
+        align-self: stretch;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="el el--1">HTML</div>
+      <div class="el el--2">and</div>
+      <div class="el el--3">CSS</div>
+      <div class="el el--4">are</div>
+      <div class="el el--5">amazing</div>
+      <div class="el el--6">languages</div>
+      <div class="el el--7">to</div>
+      <div class="el el--8">learn</div>
+    </div>
+  </body>
+</html>
