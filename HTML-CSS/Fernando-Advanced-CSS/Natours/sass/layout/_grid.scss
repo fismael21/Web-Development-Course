@@ -1,0 +1,10 @@
+.row {
+  max-width: $grid-width;
+  background-color: #eee;
+  margin: 0 auto; //TO CENTER THE GRID
+
+  //ALL CHILDS EXCEPT THE LAST ONE.
+  &:not(:last-child) {
+    margin-bottom: $gutter-vertical;
+  }
+}
