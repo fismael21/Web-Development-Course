@@ -26,7 +26,7 @@ const restaurant = {
       close: 23,
     },
     sat: {
-      open: 0, // Open 24 hours
+      open: 0,
       close: 24,
     },
   },
@@ -43,19 +43,9 @@ const restaurant = {
   },
 };
 
-restaurant.orderDeliver({
-  time: "22:30",
-  address: "Centro",
-  mainIndex: 2,
-  starterIndex: 2,
-});
-
-restaurant.orderDeliver({
-  address: "San Pablo II",
-});
-
-/*
+//Destructuring objects
 const { name, openingHours, categories } = restaurant;
+console.log(name, openingHours, categories);
 
 const {
   name: newName,
@@ -81,4 +71,14 @@ const {
   fri: { open: o, close: c },
 } = openingHours;
 console.log(o, c);
-*/
+
+restaurant.orderDeliver({
+  time: "22:30",
+  address: "Centro",
+  mainIndex: 2,
+  starterIndex: 2,
+});
+
+restaurant.orderDeliver({
+  address: "San Pablo II",
+});
